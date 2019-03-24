@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>title</title>
+  <meta name="author" content="name">
+  <meta name="description" content="description here">
+  <meta name="keywords" content="keywords,here">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <title>NBA</title>
+  </head>
+  <body>
+
+
+
+
+      <nav class="nav">
+        <a class="navbar-brand" href="#">
+          <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+        </a>
+        <a class="nav-link active" href="#">Active</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </nav>
+
+
+
+    <div class="card text-center">
+      <div class="card-header">
+        <h1 id="name" onload="getData"></h1>
+      </div>
+      <div class="card-body">
+        <!-- <h5 class="card-title">Chart Title</h5> -->
+        <canvas id="bar-chart" width="400" height="400"></canvas>
+        <p class="card-text" id="vol">volume: </p>
+        <p class="card-text" id="score">open: </p>
+        <p class="card-text" id="score">close: </p>
+        <p class="card-text" id="score">high: </p>
+        <p class="card-text" id="score">low: </p>
+      </div>
+
+
+      <form>
+        <div class="form-row">
+          <div class="col-7">
+            <input type="text" class="form-control" placeholder="Companies">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Symbols">
+          </div>
+          <!-- <div class="col">
+            <input type="text" class="form-control" placeholder="Zip">
+          </div> -->
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+          </div>
+        </div>
+      </form>
+
+
+      <div class="card-footer">
+        2 days ago
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- <script src="balls.js"></script> -->
+
+  </body>
+</html>
